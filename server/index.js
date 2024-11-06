@@ -39,7 +39,9 @@ sequelize
     console.log("Database synchronized");
     const PORT = process.env.PORT;
     app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}`);
+      console.log(
+        `Server is running on http://localhost:${PORT}, press Control + C to stop.`
+      );
     });
   })
   .catch((error) => {
