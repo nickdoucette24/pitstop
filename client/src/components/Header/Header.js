@@ -11,7 +11,7 @@ const Header = () => {
       <div className="header-wrapper">
         <div className="header-race">
           <h4 className="header-race__title">Las Vegas</h4>
-          <h5 className="header-race__location">Las Vegas, USA</h5>
+          <h5 className="header-race__location">Nevada, USA</h5>
           <h5 className="header-race__date">Nov 29, 2024</h5>
         </div>
         <div className="header-buttons">
