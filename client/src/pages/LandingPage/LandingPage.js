@@ -6,6 +6,7 @@ const LandingPage = () => {
     <>
       <div>
         <Header />
+        <p>the best way to follow f1.</p>
       </div>
     </>
   );

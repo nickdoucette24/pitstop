@@ -1,3 +1,11 @@
+@use "./sass/partials/fonts" as *;
+
 body {
+  margin: 0;
+  font-family: Raleway;
+  background-color: whitesmoke;
+}
+
+p {
   margin: 0;
 }

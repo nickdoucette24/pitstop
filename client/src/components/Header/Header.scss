@@ -3,53 +3,88 @@
 @use "../../sass/partials/mixins" as *;
 
 .header {
+  @include flexCenter;
+  flex-wrap: nowrap;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  height: 4rem;
+  border-bottom: 1px solid gray;
+  background-color: white;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
-  border-bottom: 2px solid gray;
-}
-
-.header-logo {
-  width: 8rem;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-
-  &__main {
-    width: 100%;
-  }
-}
-
-.header-wrapper {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-}
 
-.header-race {
-  text-align: left;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 0.25rem;
-  margin-left: 0.5rem;
-  border: 1px solid gray;
-  border-radius: 0.25rem;
+  &__logo {
+    @include flexCenter;
+    padding: 1rem;
 
-  &__title {
-    margin: 0;
+    &--img {
+      width: 8rem;
+    }
   }
 
-  &__location {
-    margin: 0;
-  }
+  &__menu {
+    @include flexCenter;
+    padding: 1rem;
 
-  &__date {
-    margin: 0;
+    &--icon {
+      width: 1.4rem;
+      filter: invert(22%) sepia(6%) saturate(0%) hue-rotate(160deg)
+        brightness(96%) contrast(91%);
+
+      &:hover {
+        filter: invert(24%) sepia(96%) saturate(7480%) hue-rotate(1deg)
+          brightness(105%) contrast(104%);
+      }
+    }
   }
 }
 
-.header-buttons {
-  display: flex;
-  gap: 1rem; // Adds space between the buttons
-}
+// .header-logo {
+//   width: 8rem;
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+
+//   &__main {
+//     width: 100%;
+//   }
+// }
+
+// .header-wrapper {
+//   display: flex;
+//   justify-content: space-between;
+//   width: 100%;
+// }
+
+// .header-race {
+//   text-align: left;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   padding: 0.25rem;
+//   margin-left: 0.5rem;
+//   border: 1px solid gray;
+//   border-radius: 0.25rem;
+
+//   &__title {
+//     margin: 0;
+//   }
+
+//   &__location {
+//     margin: 0;
+//   }
+
+//   &__date {
+//     margin: 0;
+//   }
+// }
+
+// .header-buttons {
+//   display: flex;
+//   gap: 1rem; // Adds space between the buttons
+// }
